@@ -29,21 +29,4 @@
 </form>
 </body>
 </html>
-<%--------------------------------------------------------------------------------------------------------------------%>
-<%--<html>--%>
-<%--<head>--%>
-<%--    <title>Survey</title>--%>
-<%--</head>--%>
-<%--<body>--%>
-<%--<h1>%s</h1>--%>
-<%--<br/>--%>
-<%--<form action="/">--%>
-<%--    <input type="redirect" value="Go back!"/>--%>
-<%--</form>--%>
 
-<%--<form action="/" class="inline">--%>
-<%--    <button class="float-left submit-button" >Home</button>--%>
-<%--</form>--%>
-
-<%--</body>--%>
-<%--</html>--%>

@@ -1,6 +1,5 @@
 package com.gmail.psyh2409;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -48,17 +47,4 @@ public class SurveyServlet extends HttpServlet {
         resp.getWriter().println(String.format(template, answer));
     }
 
-    //    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        Questionnaire questionnaire = new Questionnaire();
-//        List<String> statements = questionnaire.getAssertions();
-//        HttpSession session = request.getSession();
-//        for (int i = 0; i < statements.size(); i++) {
-//            String s = statements.get(i);
-//            session.setAttribute("statement".concat(String.valueOf(i)), s);
-//        }
-//
-//
-//        getServletContext().getRequestDispatcher("/basic.jsp").forward(request, response);
-//    }
 }

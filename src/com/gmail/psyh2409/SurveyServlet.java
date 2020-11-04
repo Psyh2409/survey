@@ -10,13 +10,15 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet(name = "SurveyServlet", urlPatterns = {"/statistics"})
+@WebServlet(name = "SurveyServlet", urlPatterns = {"/statistics", "/"})
 public class SurveyServlet extends HttpServlet {
     Map<String, Map<String, Integer>> statAnswersMap = new LinkedHashMap<>();
     List<String> statements = new Questionnaire().getAssertions();
-    String template = "<html><head><title>Survey</title></head><body><h1>%s</h1></body></html>";
+    String template = "<html><head><title>Survey</title></head><body><h1>%s</h1>" +
+            "<button onclick=\"location.href = '/';\" id=\"myButton\" class=\"float-left submit-button\" >" +
+            "Go home!</button></body></html>";
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String name = req.getParameter("name");
         String surname = req.getParameter("surname");
         String age = req.getParameter("age");
